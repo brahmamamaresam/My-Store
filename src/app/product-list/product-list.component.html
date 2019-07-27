@@ -1,6 +1,26 @@
 <h2>Products</h2>
 
 
+  <!-- <table>
+<tr><th>Name</th><th>Price</th><th>Description</th></tr>
+<tr *ngFor="let i of data">
+  <td>{{i.name}}</td>
+  <td>{{i.price}}</td>
+  <td>{{i.description}}</td>
+</tr>
+    </table> -->
+
+
+<div *ngFor="let product of data">
+  <h3>
+    <a [title]="product.name">{{product.name }}</a>
+  </h3>
+  <h3>
+    {{product.description}}
+    <button (click)="share()">Share</button>
+    </h3>
+  </div>
+
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

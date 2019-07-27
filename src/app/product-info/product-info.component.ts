@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 
+import { products } from '../products';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  selector: 'product',
+  templateUrl: './product-info.component.html',
 })
-export class AppComponent  {
+export class ProductInfoComponent {
   
 }
+
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
